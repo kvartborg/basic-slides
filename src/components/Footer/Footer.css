@@ -1,0 +1,20 @@
+footer {
+  --height: 90px;
+  min-width: var(--max-content-width);
+  position: fixed;
+  bottom: 0px;
+  z-index: 99;
+  width: 100%;
+  padding: 0px calc(var(--spacing) * 4);
+  height: var(--height);
+  line-height: var(--height);
+  text-align: right;
+  font-family: var(--font-sans-serif);
+}
+
+footer .speaker {
+  margin-right: var(--spacing);
+  font-size: 1.2em;
+  float: left;
+  color: var(--dark-light);
+}

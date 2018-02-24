@@ -1,0 +1,27 @@
+:root {
+  --primary: #59CD90;
+  --primary-light: #7AD7A6;
+  --info: #559DF3;
+  --info-light: #77B1F5;
+  --danger: #EE6352;
+  --danger-light: #F18275;
+  --dark: #1C3144;
+  --dark-light: #495A69;
+  --dark-transparent: rgba(0, 0, 0, 0.3);
+  --grey: #DCE0D9;
+  --grey-light: #F2F2F2;
+  --grey-transparent: rgba(0, 0, 0, .026);
+  --white: white;
+  --white-light: #FFFEFD;
+  --font-base-size: 19px;
+  --font-sans-serif: 'Fira Sans Condensed', sans-serif;
+  --font-serif: 'Merriweather', serif;
+  --font-monospace: 'Menlo', monospace;
+  --border-radius: 5px;
+
+  --spacing: 25px;
+  --max-width: 1000px;
+  --max-content-width: 1000px;
+
+  --break-desktop: 800px;
+}

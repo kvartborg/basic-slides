@@ -1,0 +1,76 @@
+.plane-view {
+  height: calc(100vh - 60px);
+  position: relative;
+  top:  0px;
+  left: 0px;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  border-bottom: solid 1px var(--grey-light);
+}
+
+.plane-view .planes {
+  position: absolute;
+  width: 100%;
+  top: 0px;
+  bottom: 0px;
+  z-index: 0;
+}
+
+.plane-view .content {
+  position: absolute;
+  width: 100%;
+  top: 0px;
+  bottom: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  padding: var(--spacing);
+  z-index: 1;
+}
+
+.plane-view .content .wrapper {
+  max-width: var(--max-content-width);
+  margin: 0 auto;
+}
+
+.trail {
+  position: absolute;
+  display: inline-block;
+  height: 200vh;
+  width: 25px;
+  transform-origin: center center;
+}
+
+.trail .logo {
+  opacity: 0;
+}
+
+.trail.animation-1 .logo {
+  animation: fly 12s linear infinite;
+}
+
+.trail.animation-2 .logo {
+  animation: fly 12s linear infinite;
+  animation-delay: 6s;
+}
+
+.trail.animation-3 .logo {
+  animation: fly 20s linear infinite;
+}
+
+.trail.animation-4 .logo {
+  animation: fly 20s linear infinite;
+  animation-delay: 10s;
+}
+
+.trail .logo svg { transform: rotate(180deg); }
+
+@keyframes fly {
+  0% { transform: translateY(0);  }
+  1% { opacity: 0.15; }
+  99% { opacity: 0.15; }
+  100% { transform: translateY(200vh); }
+}

@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:400,500|Merriweather:300,400,700');
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-sans-serif);
+  color: inherit;
+  font-weight: 500;
+  margin: 0px;
+  padding-top: var(--spacing);
+  line-height: 1.4;
+}
+
+h1 {
+  font-size: 3em;
+  line-height: 1.2em;
+}
+
+h2 {
+  font-family: var(--font-serif);
+  font-size: 2em;
+  font-weight: 500;
+  color: var(--dark-light);
+  padding-top: calc(var(--spacing) / 2);
+}
+
+h3 {
+  font-size: 1.8em;
+}
+
+h4 {
+  font-size: 1.4em;
+  margin-bottom: calc(var(--spacing) * -1);
+}
+
+h5 {
+  font-size: 1.2em;
+  text-transform: uppercase;
+  margin-bottom: calc(var(--spacing) * -1);
+}
+
+h6 {
+  font-size: 1em;
+}
+
+p, blockquote {
+  margin: var(--spacing) 0px;
+}
+
+code {
+  font-family: var(--font-monospace);
+  padding: 0px 8px;
+  font-size: .9em;
+  background: var(--grey-transparent);
+  display: inline-block;
+  border-radius: var(--border-radius);
+}
+
+pre code {
+  width: 100%;
+}
+
+blockquote {
+  font-weight: 600;
+  color: var(--dark-transparent);
+  border-left: solid 3px var(--grey);
+  padding-left: var(--spacing);
+  margin-left: var(--spacing);
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+body {
+  font-family: var(--font-serif);
+  background: var(--white) !important;
+  font-size: var(--font-base-size);
+  font-weight: 300;
+  line-height: 1.8em;
+  color: var(--dark) !important;
+  letter-spacing: 0.5px;
+  margin: 0px;
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 60px;
+}
+
+.text-primary { color: var(--primary) }
+.text-primary-light { color: var(--primary-light) }
+.text-info { color: var(--info) }
+.text-info-light { color: var(--info-light) }
+.text-danger { color: var(--danger) }
+.text-danger-light { color: var(--danger-light) }
+.text-dark { color: var(--dark) }
+.text-dark-light { color: var(--dark-light) }
+.text-grey { color: var(--grey) }
+.text-grey-light { color: var(--grey-light) }
+.text-white { color: var(--white) }
+.text-white-light { color: var(--white-light) }
+
+.spectacle-slide .spectacle-content {
+  text-align: left !important;
+  font-size: var(--font-base-size);
+  padding: 0px;
+}
+
+.spectacle-deck div:last-of-type {
+  top: 0px;
+}
